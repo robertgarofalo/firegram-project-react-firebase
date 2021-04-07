@@ -8,12 +8,16 @@ function App() {
 
   const [selectedImg, setSelectedImg] = useState(null);
 
+  const [imageIndex, setImageIndex] = useState(null);
+
+  const [selectedImgData, setSelectedImgData] = useState({});
+
   return (
     <div className="App">
       <Title/>
       <UploadForm />
-      <ImageGrid setSelectedImg={setSelectedImg}/>
-      { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg}/> }
+      <ImageGrid setSelectedImg={setSelectedImg} imageIndex={imageIndex} setImageIndex={setImageIndex}/>
+      { selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} imageIndex={imageIndex} setImageIndex={setImageIndex} /> }
     </div>
   );
 }
