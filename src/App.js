@@ -26,4 +26,8 @@ export default App;
 
 
 // https://www.youtube.com/watch?v=vUe91uOx7R0&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&index=27&t=195s
-// 43:24: PROGRESS BAR
+
+
+// To do: 
+// - Remove image functionality
+// - drag image functionality?

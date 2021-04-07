@@ -12,6 +12,8 @@ const ImageGrid = ({ setSelectedImg, imageIndex, setImageIndex }) => {
     const clickHandler = (url, index) => {
     setSelectedImg(url);
     setImageIndex(index);
+    console.log(imageIndex);
+    console.log(typeof imageIndex);
     }
 
     return (
