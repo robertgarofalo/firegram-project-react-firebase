@@ -6,6 +6,7 @@ const useStorage = (file) => {
     const [error, setError] = useState(null);
     const [url, setUrl] = useState(null);
 
+    // Add image to storage
     useEffect(() => {
         //references
         const storageRef = projectStorage.ref(file.name); // creates a reference of the file being uploaded
@@ -17,9 +18,10 @@ const useStorage = (file) => {
         }, (err) => {
             setError(err);
         }, async () => {
+            const fileName = file.name;
             const url = await storageRef.getDownloadURL();
             const createdAt = timestamp();
-            collectionRef.add({ url, createdAt })
+            collectionRef.add({fileName, url, createdAt })
             setUrl(url);
         });
     }, [file])
