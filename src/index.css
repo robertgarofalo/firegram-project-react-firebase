@@ -157,3 +157,32 @@ transform: scale(0.9);
   cursor: pointer;
 }
 
+/* Footer styles */
+.footer {
+  /* background-color: #efb6b2; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer hr {
+  color: #000;
+  width: 40%;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  margin: 2px 0;
+}
+
+.footer h4:last-child {
+  margin-bottom: 15px;
+}
+
+.footer h4 a {
+  color: var(--primary); 
+  text-decoration: none;
+}
+
+
